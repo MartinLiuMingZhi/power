@@ -20,6 +20,6 @@
     <color name="primary_color">#2196F3</color>
     <color name="primary_text_color">#0C1217</color>
     <color name="light_grey">#F2F2F2</color>
-
+    <color name="white_grey">#EEF2FF</color>
     <!--    <color name="selector_item_color">@color/colorPrimary</color>-->
 </resources>
