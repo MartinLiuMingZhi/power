@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_monitoring"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/monitoring"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/map"/>
+
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/event"/>
+
+    <item
+        android:id="@+id/navigation_system"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/system"/>
+</menu>
