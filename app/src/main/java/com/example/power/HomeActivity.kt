@@ -5,7 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.example.power.databinding.ActivityHomeBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
 
@@ -21,6 +26,14 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
+        val  navView:BottomNavigationView = binding.navView
 
+        val appBarConfiguration:AppBarConfiguration = AppBarConfiguration.Builder(
+            R.id.navigation_monitoring,R.id.navigation_map,R.id.navigation_event,R.id.navigation_system
+        ).build()
+
+        val navController:NavController = Navigation.findNavController(this,R.id.nav_host_fragment_activity_home)
+        //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        setupWithNavController(binding.navView, navController)
     }
 }
