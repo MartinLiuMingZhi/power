@@ -55,6 +55,13 @@
     </style>
 
 
+    <style name="BottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
     <!--&lt;!&ndash;    定义亮色模式时，DialogX 中的 AppCompat 组件主题色：&ndash;&gt;-->
 <!--    <style name="DialogXCompatThemeLight" parent="Theme.AppCompat.Light.NoActionBar">-->
 <!--        <item name="colorAccent">@color/colorAccent</item>-->
